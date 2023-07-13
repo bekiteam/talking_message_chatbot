@@ -19,4 +19,4 @@ const handleChat = () => {
 }
 senChatbtn.addEventListener("click", handleChat);
 
-showToggler.addEventListener("click", () => document.body.classList.toggle("show-toggler"));
+showToggler.addEventListener("click", () => document.querySelector(".container-msg").classList.toggle("show-toggler"));
