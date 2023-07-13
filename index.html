@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <link rel="stylesheet" href="style.css"><!--css-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!--icons-->
+    <link rel="shortcut icon" href="img/header-icon.png"/><!--fav-iconLogo-->
+    <title>codewith.beki</title>
 </head>
-<body class="show-toggler">
-    <button class="ch-toggler">
-        <span><img src="img/chatt.png" alt="" style="width: 35px;"></span>
-        <span><img src="img/xx.png" alt="" style="width: 35px;"></span>
+<body>
+    <div class="container-msg show-toggler">
+        <nav><!--start header about-->
+            <div class="icon-m">
+                <img src="img/icon-h.png" alt="" class="icon-m">
+            </div>
+            <ul>
+                <li><a href="#">travel guide</a></li>
+                <li><a href="#">famous places</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+            <button class="btn-booking">Booking<i class='bx bxs-plane-take-off'></i></button>
+        </nav>
 
-    </button>
-    <div class="container">
-        <header>
-            <span><img src="img/x.png" alt=""></span>
-            <h2>Support Chat</h2>
-        </header>
-        <ul class="chatbox">
-            <li class="msg in"><!--msg-inComing-->
-                <span class="mar"><img src="img/avatar.png" alt="" style="width: 52px; object-fit: cover;"></span>
-                <p>Assalomu Aleykum<br>Qandey yordam berishim mumkin?</p>
-            </li>
-        </ul>
-        <div class="chat-input">
-            <textarea placeholder="Enter a message..."></textarea>
-            <span class="send-outline"><img src="img/send.png" alt="" style="width: 22px;"></span>
+        <div class="form-travel">
+            <h1>Beautiful<br>places to explore</h1>
+            <p>These are the places in the world that literally took our breath away when we saw them for the first time. I hope you
+                enjoy the most beautiful places in the world…That we’ve been to.</p>
+            <form>
+                <input type="text" placeholder="Country name">
+                <button type="submit" class="btn-booking">Search</button>
+            </form>
+        </div>
+
+        <!--chat toggler-->
+        <button class="ch-toggler">
+            <span><img src="img/chatt.png" alt="" style="width: 35px;"></span>
+            <span><img src="img/xx.png" alt="" style="width: 35px;"></span>
+    
+        </button>
+        <div class="container">
+            <header>
+                <span><img src="img/x.png" alt=""></span>
+                <h2>Support Chat</h2>
+            </header>
+            <ul class="chatbox">
+                <li class="msg in"><!--msg-inComing-->
+                    <span class="mar"><img src="img/avatar.png" alt="" style="width: 52px; object-fit: cover;"></span>
+                    <p>Assalomu Aleykum<br>Qandey yordam berishim mumkin?</p>
+                </li>
+            </ul>
+            <div class="chat-input">
+                <textarea placeholder="Enter a message..."></textarea>
+                <span class="send-outline"><img src="img/send.png" alt="" style="width: 22px;"></span>
+            </div>
         </div>
     </div>
     <script src="app.js"></script>
